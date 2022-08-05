@@ -13,15 +13,12 @@ function ServiceCard({ title, icon, image }) {
 					<img src={image} alt="teaching a student" />
 				</div>
 				<div className="service-list">
-					<p>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-						Pariatur!
-					</p>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
 					<ol>
-						<li>1</li>
-						<li>2</li>
-						<li>3</li>
-						<li>4</li>
+						<li>List Item 1</li>
+						<li>List Item 2</li>
+						<li>List Item 3</li>
+						<li>List Item 4</li>
 					</ol>
 				</div>
 				<button className="btn">Book</button>
@@ -59,6 +56,7 @@ const Wrapper = styled.div`
 	.image img {
 		border-bottom-right-radius: 6rem;
 		border-bottom-left-radius: 6rem;
+		box-shadow: 0 1rem 1rem black;
 	}
 
 	.image:before {
@@ -79,5 +77,10 @@ const Wrapper = styled.div`
 	.service-list {
 		font-size: var(--fs-sm);
 		padding: 3rem;
+		text-align: center;
+
+		li {
+			list-style-type: none;
+		}
 	}
 `;
