@@ -1,7 +1,7 @@
 import React from 'react';
 import './businessLinks.css';
 
-const logos = ['Mercury', 'Yandex', 'Gazprom', 'Lenta'];
+const logos = ['Mercury', 'Yandex', 'Gazprom', 'Lenta', 'Pyatorachka'];
 
 function BusinessLinks() {
 	return (

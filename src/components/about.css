@@ -1,0 +1,52 @@
+.about {
+	width: 100%;
+	background-color: var(--bg-color);
+	padding-top: 10rem;
+
+	display: flex;
+}
+
+.photo {
+	width: 50%;
+	/* background-color: blue; */
+}
+
+.photo img {
+	border-top-right-radius: 33rem;
+	width: 80%;
+	box-shadow: 0 1rem 1rem var(--primary-color);
+}
+
+.text-content {
+	color: var(--secondary-color);
+	width: 50%;
+	padding: 8rem 4rem 0 10rem;
+	/* background-color: pink; */
+}
+
+.text-content h1 {
+	font-size: var(--fs-md);
+}
+
+.text-content h2 {
+	font-size: var(--fs-reg);
+	margin-top: var(--margin-lg);
+}
+
+.text-content ul {
+	margin-top: var(--margin-lg);
+}
+
+.text-content ul li {
+	font-size: var(--fs-reg);
+	transform: translateX(3rem);
+}
+
+.text-content button {
+	margin-top: var(--margin-lg);
+}
+
+.text-content p {
+	font-size: var(--fs-sm);
+	margin-top: var(--margin-md);
+}
