@@ -11,6 +11,10 @@
 	background-position: right 65% bottom 55%;
 }
 
+.logo {
+	width: 20%;
+}
+
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -24,10 +28,10 @@
 
 .hero-text {
 	color: #fff;
-	width: 50%;
-	margin-left: 18%;
+	width: 70%;
+	margin-left: 10%;
 	/* background-color: blue; */
-	transform: translateY(-5rem);
+	/* transform: translateY(-2rem); */
 }
 
 .hero-title {
@@ -36,7 +40,7 @@
 
 .hero-subtitle {
 	font-size: var(--fs-reg);
-	width: 80%;
+	width: 60%;
 }
 
 .hero-btn {

@@ -11,7 +11,7 @@ function Hero() {
 	return (
 		<section className="hero-container">
 			<header className="header">
-				<div>
+				<div className="logo">
 					<img src={logo} alt="Olga's site logo" />
 				</div>
 				<MdMenu className="hamburgerNav" />

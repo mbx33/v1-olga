@@ -59,4 +59,5 @@ body {
 	background-color: var(--secondary-color);
 	opacity: 0.8;
 	transition: ease-in 0.2s;
+	border: 1px solid var(--primary-color);
 }
