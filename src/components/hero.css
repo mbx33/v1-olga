@@ -1,0 +1,44 @@
+.hero-container {
+	height: 100vh;
+	background-image: linear-gradient(
+			to bottom right,
+			rgba(34, 34, 34, 1),
+			rgba(34, 34, 34, 0.5),
+			rgba(34, 34, 34, 0.2)
+		),
+		url('../assets/standing.jpg');
+	background-repeat: no-repeat;
+	background-position: right 65% bottom 55%;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.hamburgerNav {
+	color: var(--secondary-color);
+	font-size: var(--fs-lg);
+	cursor: pointer;
+}
+
+.hero-text {
+	color: #fff;
+	width: 50%;
+	margin-left: 18%;
+	/* background-color: blue; */
+	transform: translateY(-5rem);
+}
+
+.hero-title {
+	font-size: var(--fs-lg);
+}
+
+.hero-subtitle {
+	font-size: var(--fs-reg);
+	width: 80%;
+}
+
+.hero-btn {
+	margin-top: var(--margin-lg);
+}

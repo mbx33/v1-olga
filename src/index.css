@@ -4,14 +4,16 @@
 :root {
 	--heading-color: #4a91a1;
 	--text-color: #23262b;
+	--text-color-light: #fff;
 	--primary-color: #b1c0d6;
 	--secondary-color: #4a91a1;
 	--highlight-color: #96bcc4;
 	--bg-color: #f4f4f4;
+	--bg-secondary-color: #d6d6d6;
 
-	--margin-sm: 0.5rem;
-	--margin-md: 1rem;
-	--margin-lg: 2rem;
+	--margin-sm: 1rem;
+	--margin-md: 2.5rem;
+	--margin-lg: 4rem;
 
 	--fw-sm: 300;
 	--fw-md: 400;
@@ -38,4 +40,23 @@ body {
 	font-family: Montserrat, sans-serif;
 	margin: 0;
 	background: var(--bg-color);
+}
+
+/* Utility */
+.btn {
+	font-size: var(--fs-sm);
+	padding: 1rem;
+	border: none;
+	border-radius: 0.7rem;
+	background-color: var(--primary-color);
+	color: var(--text-color);
+	cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+	color: var(--text-color-light);
+	background-color: var(--secondary-color);
+	opacity: 0.8;
+	transition: ease-in 0.2s;
 }

@@ -1,7 +1,14 @@
 import './App.css';
+import BusinessLinks from './components/BusinessLinks';
+import Hero from './components/Hero';
 
 function App() {
-	return <div className="App">Hello World!</div>;
+	return (
+		<div>
+			<Hero />
+			<BusinessLinks />
+		</div>
+	);
 }
 
 export default App;
