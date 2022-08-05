@@ -1,0 +1,16 @@
+.services {
+	padding-top: 10rem;
+	color: var(--secondary-color);
+}
+
+.title {
+	color: var(--secondary-color);
+	text-align: center;
+	font-size: var(--fs-md);
+	margin-bottom: 3rem;
+}
+
+.service-container {
+	display: flex;
+	justify-content: space-evenly;
+}
