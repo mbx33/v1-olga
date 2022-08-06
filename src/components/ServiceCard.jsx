@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
-function ServiceCard({ title, icon, image }) {
+function ServiceCard({ title, icon, image, content, list }) {
+	const [show, setShow] = useState(false);
+
 	return (
 		<Container>
 			<div className="headline">
@@ -9,16 +11,23 @@ function ServiceCard({ title, icon, image }) {
 				<h1>{title}</h1>
 			</div>
 			<Wrapper>
-				<div className="image">
-					<img src={image} alt="teaching a student" />
+				<div className={`${show ? 'overlay active' : 'overlay'}`}>
+					<p>Hello There!!</p>
 				</div>
-				<div className="service-list">
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+				<div>
+					<img
+						src={image}
+						alt="teaching a student"
+						onMouseEnter={() => setShow(true)}
+					/>
+				</div>
+				<div className="service-list" onMouseEnter={() => setShow(false)}>
+					<p>{content}</p>
 					<ol>
-						<li>List Item 1</li>
-						<li>List Item 2</li>
-						<li>List Item 3</li>
-						<li>List Item 4</li>
+						{list &&
+							list.map((item, i) => {
+								return <li key={i}>{item}</li>;
+							})}
 					</ol>
 				</div>
 				<button className="btn">Book</button>
@@ -48,6 +57,7 @@ const Container = styled.article`
 const Wrapper = styled.div`
 	background-color: var(--primary-color);
 	color: var(--text-color);
+	box-shadow: 0 0.5rem 1rem black;
 
 	.image {
 		position: relative;
@@ -56,22 +66,29 @@ const Wrapper = styled.div`
 	.image img {
 		border-bottom-right-radius: 6rem;
 		border-bottom-left-radius: 6rem;
-		box-shadow: 0 1rem 1rem black;
+		box-shadow: 0 0.2rem 1rem black;
 	}
 
-	.image:before {
+	.overlay {
 		position: absolute;
-		content: '';
-		height: 100%;
-		width: 100%;
+		transform: translateY(-15rem);
+		height: 33%;
+		width: 28%;
+		opacity: 0;
+		border-bottom-right-radius: 1rem;
+		border-bottom-left-radius: 1.5rem;
+		transition: all 0.5s ease-in;
+	}
+
+	.active {
 		background-image: linear-gradient(
-			to bottom right,
-			rgba(34, 34, 34, 0.7),
-			rgba(34, 34, 34, 0.5),
-			rgba(34, 34, 34, 0.3)
+			to top,
+			rgba(314, 134, 34, 0.4),
+			rgba(314, 134, 34, 0.85)
 		);
-		border-bottom-right-radius: 6rem;
-		border-bottom-left-radius: 6rem;
+		transform: translateY(0);
+		opacity: 1;
+		transition: all 0.5s ease-in;
 	}
 
 	.service-list {

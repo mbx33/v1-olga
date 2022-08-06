@@ -9,8 +9,21 @@ import { FaCommentsDollar } from 'react-icons/fa';
 import { MdSchool } from 'react-icons/md';
 //images
 import training from '../assets/training.jpg';
-import corp from '../assets/corp-1.jpg';
+import corp from '../assets/corp.jpg';
 import personal from '../assets/personal.jpg';
+//content
+const professional = {
+	text: 'lorem this is the sentence to fill out the subheadline',
+	list: ['List item 1', 'List item 2', 'List item 3', 'List item 4'],
+};
+const entrepreneurs = {
+	text: 'lorem this is the sentence to fill out the subheadline',
+	list: ['List item 1', 'List item 2', 'List item 3', 'List item 4'],
+};
+const student = {
+	text: 'lorem this is the sentence to fill out the subheadline',
+	list: ['List item 1', 'List item 2', 'List item 3', 'List item 4'],
+};
 
 function Services() {
 	return (
@@ -21,13 +34,23 @@ function Services() {
 					title="For Professionals"
 					icon={<BsBriefcaseFill />}
 					image={corp}
+					content={professional.text}
+					list={professional.list}
 				/>
 				<ServiceCard
 					title="For Entrepreneurs"
 					icon={<FaCommentsDollar />}
 					image={personal}
+					content={entrepreneurs.text}
+					list={entrepreneurs.list}
 				/>
-				<ServiceCard title="For Students" icon={<MdSchool />} image={training} />
+				<ServiceCard
+					title="For Students"
+					icon={<MdSchool />}
+					image={training}
+					content={student.text}
+					list={student.list}
+				/>
 			</div>
 		</section>
 	);

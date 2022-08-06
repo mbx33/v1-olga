@@ -7,8 +7,8 @@ function BusinessLinks() {
 	return (
 		<section className="biz-section">
 			<div className="logos-container">
-				{logos.map((logo) => {
-					return <h4>{logo}</h4>;
+				{logos.map((logo, i) => {
+					return <h4 key={i}>{logo}</h4>;
 				})}
 			</div>
 		</section>
