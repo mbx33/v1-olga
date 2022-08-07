@@ -22,7 +22,7 @@ function Partners() {
 				{partners.map((person, i) => {
 					const { name, job, url } = person;
 					return (
-						<div className="profile">
+						<div className="profile" key={i}>
 							<div className="profile-img">
 								<img src={url} alt="profile pic" />
 							</div>

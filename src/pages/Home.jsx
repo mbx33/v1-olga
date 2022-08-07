@@ -8,6 +8,8 @@ import Services from '../components/Services';
 import Testimonial from '../components/Testimonial';
 import CallToAction from '../components/CallToAction';
 import Partners from '../components/Partners';
+import Footer from '../components/Footer';
+import BottomFooter from '../components/BottomFooter';
 
 function Home() {
 	return (
@@ -19,6 +21,8 @@ function Home() {
 			<Testimonial />
 			<CallToAction />
 			<Partners />
+			<Footer />
+			<BottomFooter />
 		</>
 	);
 }
