@@ -5,7 +5,7 @@
 	--heading-color: #4a91a1;
 	--text-color: #23262b;
 	--text-color-light: #fff;
-	--primary-color: #b1c0d6;
+	--primary-color: hsl(216, 31%, 77%);
 	--secondary-color: #4a91a1;
 	--highlight-color: #96bcc4;
 	--bg-color: #f4f4f4;
@@ -46,6 +46,7 @@ body {
 /* Utility */
 .btn {
 	font-size: var(--fs-sm);
+	font-weight: var(--fw-lg);
 	padding: 1rem;
 	border: none;
 	border-radius: 0.7rem;
