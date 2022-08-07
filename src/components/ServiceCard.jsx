@@ -2,25 +2,13 @@
 import styled from 'styled-components';
 
 function ServiceCard({ title, icon, image, content, list }) {
-	// const [animate, setAnimate] = useState(false);
-
-	// const animateCard = () => {
-	// 	console.log(animate);
-	// 	setAnimate(!animate);
-	// };
-
 	return (
 		<Container>
 			<div className="headline">
 				<p>{icon}</p>
 				<h1>{title}</h1>
 			</div>
-			<Wrapper
-			// className={`${animate ? 'translate' : ''}`}
-			>
-				{/* <div className={`${show ? 'overlay active' : 'overlay'}`}>
-					<p>Hello There!!</p>
-				</div> */}
+			<Wrapper>
 				<div>
 					<img src={image} alt="teaching a student" />
 				</div>
@@ -65,6 +53,10 @@ const Wrapper = styled.div`
 	transition: all 0.7s ease-in-out;
 	border-bottom-left-radius: 4.5rem;
 	border-bottom-right-radius: 4.5rem;
+
+	&:hover {
+		transform: translateY(-2rem);
+	}
 
 	.translate {
 		transform: scale(1.4rem);

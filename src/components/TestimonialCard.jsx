@@ -38,6 +38,11 @@ const Card = styled.div`
 	justify-content: space-between;
 	padding: 2rem;
 	width: 50%;
+	transition: all 0.5s ease-in;
+
+	&:hover {
+		transform: scale(1.1);
+	}
 
 	span {
 		font-size: var(--fs-reg);
