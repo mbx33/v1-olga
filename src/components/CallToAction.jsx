@@ -1,10 +1,10 @@
 import React from 'react';
 //styles
-import './cta.css';
+import './callToAction.css';
 
 import look from '../assets/looking.jpg';
 
-function Cta() {
+function CallToAction() {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		console.log('Form Submitted');
@@ -18,38 +18,38 @@ function Cta() {
 					<p>
 						Start living better today, Lorem ipsum dolor sit amet consectetur!
 					</p>
-					<br />
 					<p>
 						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo,
 						sed?
 					</p>
 				</div>
-				<form
-					className="form"
-					onSubmit={(e) => {
-						handleSubmit(e);
-					}}
-				>
-					<div className="input">
-						<label>
-							<span>Full Name: </span>
-							<input type="text" />
-						</label>
-					</div>
-					<div className="input">
+				<div className="form">
+					<form
+						onSubmit={(e) => {
+							handleSubmit(e);
+						}}
+					>
+						<div className="input">
+							<label>
+								<span>Full Name: </span>
+								<input type="text" />
+							</label>
+						</div>
+						{/* <div className="input">
 						<label>
 							<span>Email address: </span>
 							<input type="email" />
 						</label>
-					</div>
-					{/* <div className="input">
-						<label>
-							<span>Phone: </span>
-							<input type="text" placeholder="+7" />
-						</label>
 					</div> */}
-					<button className="btn-cta">Request Call Back</button>
-				</form>
+						<div className="input">
+							<label>
+								<span>Phone: </span>
+								<input type="text" placeholder="+country" />
+							</label>
+						</div>
+						<button className="btn-cta">Let's Talk</button>
+					</form>
+				</div>
 			</div>
 			<div className="cta-image">
 				<img src={look} alt="looking" />
@@ -58,4 +58,4 @@ function Cta() {
 	);
 }
 
-export default Cta;
+export default CallToAction;

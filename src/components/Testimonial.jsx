@@ -17,6 +17,14 @@ const testimonials = [
 		name: 'Maxim',
 		text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis consequatur illum sint id saepe.',
 	},
+	{
+		name: 'Vera',
+		text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis consequatur illum sint id saepe.',
+	},
+	{
+		name: 'Leo',
+		text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis consequatur illum sint id saepe.',
+	},
 ];
 
 function Testimonial() {

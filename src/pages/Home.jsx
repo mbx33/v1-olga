@@ -6,7 +6,8 @@ import BusinessLinks from '../components/BusinessLinks';
 import About from '../components/About';
 import Services from '../components/Services';
 import Testimonial from '../components/Testimonial';
-import Cta from '../components/Cta';
+import CallToAction from '../components/CallToAction';
+import Partners from '../components/Partners';
 
 function Home() {
 	return (
@@ -16,7 +17,8 @@ function Home() {
 			<About />
 			<Services />
 			<Testimonial />
-			<Cta />
+			<CallToAction />
+			<Partners />
 		</>
 	);
 }

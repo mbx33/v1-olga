@@ -10,22 +10,35 @@
 .form-container {
 	width: 70%;
 	background: hsl(216, 31%, 77%);
-	/* border-top-right-radius: 6rem;
-	border-bottom-right-radius: 6rem; */
-	border-radius: 5rem;
-	padding: 3rem;
+	border-top-left-radius: 5rem;
+	border-bottom-left-radius: 5rem;
+	/* border-radius: 5rem; */
+	padding: 2rem;
 	z-index: 10;
 	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	/* background-color: pink; */
 }
 
 .cta-text {
 	color: var(--text-color);
 	font-size: var(--fs-sm);
 	padding: 3rem 0;
+	text-align: center;
+	/* background-color: red; */
+}
+
+.cta-text p {
+	font-weight: var(--fw-reg);
+}
+
+.cta-text p:nth-of-type(1) {
+	margin-top: 3rem;
 }
 
 .cta-image {
-	width: 40%;
+	width: 50%;
 	overflow: hidden;
 	border-radius: 4rem;
 }
@@ -40,13 +53,12 @@
 .btn-cta {
 	font-size: var(--fs-sm);
 	font-weight: var(--fw-lg);
-	padding: 1rem;
+	padding: 1rem 2rem;
 	border: none;
 	border-radius: 0.7rem;
 	background-color: var(--secondary-color);
 	color: var(--text-color);
 	cursor: pointer;
-	width: 100%;
 }
 
 .btn-cta:hover {
@@ -61,9 +73,15 @@
 	transform: scale(0.7);
 }
 
+.form {
+	display: flex;
+	justify-content: center;
+}
+
 .form label {
-	display: block;
+	/* display: block; */
 	font-size: var(--fs-sm);
+	font-weight: var(--fw-reg);
 }
 
 .form input {

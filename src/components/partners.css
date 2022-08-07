@@ -1,0 +1,32 @@
+.partners-container {
+	width: 70%;
+	margin: 0 auto;
+	/* background-color: pink; */
+	display: flex;
+}
+
+.profile {
+	width: 30%;
+	align-items: center;
+	/* background-color: blue; */
+	padding: 3rem;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	gap: 3rem;
+}
+
+.profile-img img {
+	border-radius: 50%;
+}
+
+.name {
+	font-weight: var(--fw-md);
+	font-size: var(--fs-reg);
+}
+
+.job {
+	font-weight: var(--fw-md);
+	font-size: var(--fs-sm);
+	font-style: italic;
+}
