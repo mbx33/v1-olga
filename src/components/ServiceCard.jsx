@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import styled from 'styled-components';
 
 function ServiceCard({ title, icon, image, content, list }) {
-	const [show, setShow] = useState(false);
+	// const [show, setShow] = useState(false);
 
 	return (
 		<Container>
@@ -11,17 +11,13 @@ function ServiceCard({ title, icon, image, content, list }) {
 				<h1>{title}</h1>
 			</div>
 			<Wrapper>
-				<div className={`${show ? 'overlay active' : 'overlay'}`}>
+				{/* <div className={`${show ? 'overlay active' : 'overlay'}`}>
 					<p>Hello There!!</p>
-				</div>
+				</div> */}
 				<div>
-					<img
-						src={image}
-						alt="teaching a student"
-						onMouseEnter={() => setShow(true)}
-					/>
+					<img src={image} alt="teaching a student" />
 				</div>
-				<div className="service-list" onMouseEnter={() => setShow(false)}>
+				<div className="service-list">
 					<p>{content}</p>
 					<ol>
 						{list &&
@@ -30,7 +26,9 @@ function ServiceCard({ title, icon, image, content, list }) {
 							})}
 					</ol>
 				</div>
-				<button className="btn">Book</button>
+				<div className="contact-btn">
+					<button className="btn">Contact Me</button>
+				</div>
 			</Wrapper>
 		</Container>
 	);
@@ -55,15 +53,13 @@ const Container = styled.article`
 `;
 
 const Wrapper = styled.div`
-	background-color: var(--primary-color);
 	color: var(--text-color);
-	box-shadow: 0 0.5rem 1rem black;
+	box-shadow: 0 0.5rem 1rem var(--secondary-color);
+	transition: all 0.7s ease-in-out;
+	border-bottom-left-radius: 4.5rem;
+	border-bottom-right-radius: 4.5rem;
 
-	.image {
-		position: relative;
-	}
-
-	.image img {
+	img {
 		border-bottom-right-radius: 6rem;
 		border-bottom-left-radius: 6rem;
 		box-shadow: 0 0.2rem 1rem black;
@@ -71,13 +67,13 @@ const Wrapper = styled.div`
 
 	.overlay {
 		position: absolute;
-		transform: translateY(-15rem);
+		transform: translateY(-25rem);
 		height: 33%;
 		width: 28%;
 		opacity: 0;
 		border-bottom-right-radius: 1rem;
 		border-bottom-left-radius: 1.5rem;
-		transition: all 0.5s ease-in;
+		transition: all 0.7s ease-in;
 	}
 
 	.active {
@@ -88,7 +84,9 @@ const Wrapper = styled.div`
 		);
 		transform: translateY(0);
 		opacity: 1;
-		transition: all 0.5s ease-in;
+		transition: all 0.7s ease-in;
+		border-bottom-right-radius: 6rem;
+		border-bottom-left-radius: 6rem;
 	}
 
 	.service-list {
@@ -98,6 +96,17 @@ const Wrapper = styled.div`
 
 		li {
 			list-style-type: none;
+		}
+	}
+
+	.contact-btn {
+		display: flex;
+		justify-content: center;
+		padding: 1rem;
+
+		button {
+			margin-bottom: 1rem;
+			padding: 1rem 2rem;
 		}
 	}
 `;

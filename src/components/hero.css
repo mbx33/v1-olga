@@ -26,6 +26,11 @@
 	cursor: pointer;
 }
 
+.hamburgerNav:hover {
+	color: var(--primary-color);
+	transition: 1s;
+}
+
 .hero-text {
 	color: #fff;
 	width: 70%;
