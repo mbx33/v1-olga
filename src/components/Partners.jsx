@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './partners.css';
 
 const partners = [
@@ -15,6 +15,13 @@ const partners = [
 ];
 
 function Partners() {
+	const [flipped, setFlipped] = useState(false);
+
+	const flip = (i) => {
+		console.log(i);
+		setFlipped(!flipped);
+	};
+
 	return (
 		<section className="partners">
 			<h3 className="title">My Partners</h3>
@@ -22,9 +29,21 @@ function Partners() {
 				{partners.map((person, i) => {
 					const { name, job, url } = person;
 					return (
-						<div className="profile" key={i}>
-							<div className="profile-img">
-								<img src={url} alt="profile pic" />
+						<div className="profile" key={i} onClick={() => flip(i)}>
+							<div
+								className={` ${
+									flipped ? 'flipped profile-img' : 'profile-img'
+								}`}
+							>
+								<div className="back back-content">
+									<p>Socials</p>
+									<ul>
+										<li>VK</li>
+										<li>Insta</li>
+										<li>TikTok</li>
+									</ul>
+								</div>
+								<img src={url} alt="profile pic" className="front" />
 							</div>
 							<div className="profile-text">
 								<h4 className="name">{name}</h4>
