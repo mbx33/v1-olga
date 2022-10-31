@@ -2,14 +2,14 @@
 
 /* variables */
 :root {
-	--heading-color: #4a91a1;
-	--text-color: #23262b;
-	--text-color-light: #fff;
+	--heading-color: hsl(191, 37%, 46%);
+	--text-color: hsl(218, 10%, 15%);
+	--text-color-light: hsl(0, 0%, 100%);
 	--primary-color: hsl(216, 31%, 77%);
-	--secondary-color: #4a91a1;
-	--highlight-color: #96bcc4;
-	--bg-color: #f4f4f4;
-	--bg-secondary-color: #d6d6d6;
+	--secondary-color: hsl(191, 37%, 46%);
+	--highlight-color: hsl(190, 28%, 68%);
+	--bg-color: hsl(0, 0%, 96%);
+	--bg-secondary-color: hsl(0, 0%, 84%);
 
 	--margin-sm: 1rem;
 	--margin-md: 2.5rem;

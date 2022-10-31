@@ -27,7 +27,7 @@
 }
 
 .hamburgerNav:hover {
-	color: var(--primary-color);
+	color: var(--text-color-light);
 	transition: 1s;
 }
 

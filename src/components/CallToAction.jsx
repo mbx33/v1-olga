@@ -1,10 +1,13 @@
-import React from 'react';
+import { useState } from 'react';
 //styles
 import './callToAction.css';
 
 import look from '../assets/looking.jpg';
 
 function CallToAction() {
+	const [name, setName] = useState('');
+	const [email, setEmail] = useState('');
+	const [phone, setPhone] = useState('');
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		console.log('Form Submitted');
@@ -14,7 +17,7 @@ function CallToAction() {
 		<section className="cta-container">
 			<div className="form-container">
 				<div className="cta-text">
-					<h2>Get your first consultation for free!</h2>
+					<h2>Get your free consultation!</h2>
 					<p>
 						Start living better today, Lorem ipsum dolor sit amet consectetur!
 					</p>
@@ -32,19 +35,19 @@ function CallToAction() {
 						<div className="input">
 							<label>
 								<span>Full Name: </span>
-								<input type="text" />
+								<input type="text" placeholder="Name" />
 							</label>
 						</div>
-						{/* <div className="input">
-						<label>
-							<span>Email address: </span>
-							<input type="email" />
-						</label>
-					</div> */}
+						<div className="input">
+							<label>
+								<span>Email address: </span>
+								<input type="email" placeholder="Email" />
+							</label>
+						</div>
 						<div className="input">
 							<label>
 								<span>Phone: </span>
-								<input type="text" placeholder="+country" />
+								<input type="text" placeholder="Phone #" />
 							</label>
 						</div>
 						<button className="btn-cta">Let's Talk</button>
