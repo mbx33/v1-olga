@@ -8,7 +8,7 @@
 
 .photo {
 	width: 40%;
-	/* background-color: blue; */
+	overflow: hidden;
 }
 
 .photo img {
@@ -17,11 +17,18 @@
 	box-shadow: 0 1rem 1rem var(--primary-color);
 }
 
+.profile-img {
+	transition: transform 0.3s ease-in-out;
+}
+
+.profile-img:hover {
+	transform: scale(1.2);
+}
+
 .text-content {
 	color: var(--secondary-color);
 	width: 60%;
 	padding: 8rem 4rem 0 20rem;
-	/* background-color: pink; */
 }
 
 .text-content h1 {

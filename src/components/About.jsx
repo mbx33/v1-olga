@@ -7,7 +7,7 @@ function About() {
 	return (
 		<section className="about">
 			<div className="photo">
-				<img src={profile} alt="standing image" />
+				<img src={profile} alt="standing image" className="profile-img" />
 			</div>
 			<div className="text-content">
 				<h1>Headline Title Here</h1>

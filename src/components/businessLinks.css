@@ -1,11 +1,12 @@
 .biz-section {
-	height: 15vh;
 	width: 100%;
 	background-color: var(--bg-secondary-color);
 }
 
 .logos-container {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
+	align-items: center;
 	padding: 5rem 10rem;
 }

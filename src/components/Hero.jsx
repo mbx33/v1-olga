@@ -1,5 +1,6 @@
 import React from 'react';
-import { MdMenu } from 'react-icons/md';
+
+import Navbar from './navigation/Navbar';
 
 //styles
 import './hero.css';
@@ -14,7 +15,7 @@ function Hero() {
 				<div className="logo">
 					<img src={logo} alt="Olga's site logo" />
 				</div>
-				<MdMenu className="hamburgerNav" />
+				<Navbar />
 			</header>
 			<main className="hero-text">
 				<h1 className="hero-title">Unlock your potential</h1>
